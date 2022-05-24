@@ -1,7 +1,7 @@
 .more_container {
     @media (min-width:320px) {
         padding: 1rem;
-        background-color: lightseagreen;
+        background-color: #4e7bcf;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -15,26 +15,33 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: aliceblue;
+            background-color: #96bafc;
+
             border-radius: 8px;
             padding: 1rem;
         }
+
         @media (min-width:1024px) {
             width: 50%;
         }
-        .more_card_header{
+
+        .more_card_header {
             @media (min-width:320px) {
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-transform: uppercase;
+                background-color: #4e7bcf;
+                color: aliceblue;
             }
-            h1{
+
+            h1 {
                 font-size: 25px;
             }
         }
-        .more_card_body{
+
+        .more_card_body {
             @media (min-width:320px) {
                 width: 100%;
                 display: flex;
@@ -43,7 +50,8 @@
                 padding: 1rem;
                 background-color: aleblue;
             }
-            img{
+
+            img {
                 @media (min-width:320px) {
                     width: 90%;
                     height: 90%;
@@ -51,73 +59,117 @@
                 }
             }
         }
-        .more_card_buttons{
+
+        .more_card_buttons {
             width: 100%;
             height: 40px;
             display: flex;
             justify-content: center;
             gap: 2px;
-            button{
+
+            button {
                 width: 100%;
-                height:100% ;
+                height: 100%;
                 border: 0;
                 color: white;
                 font-weight: bold;
-                
+
             }
-            .grass{
+
+            .grass {
                 background-color: lightgreen;
             }
-            .fire{
+
+            .fire {
                 background-color: crimson;
             }
-            .poison{
+
+            .poison {
                 background-color: purple;
             }
-            .water{
+
+            .water {
                 background-color: #6EA4BB;
             }
-            .flying{
+
+            .flying {
                 background-color: #9edaf2;
             }
-            .bug{
+
+            .bug {
                 background-color: limegreen;
             }
-            .normal{
+
+            .electric {
+                background-color: goldenrod;
+            }
+
+            .ground {
+                background-color: darkkhaki;
+            }
+
+            .fairy {
+                background-color: pink;
+            }
+
+            .fighting {
+                background-color: slategrey;
+            }
+            .rock{
+                background-color: #333;
+            }
+            .psychic{
+                background-color: plum;
+            }
+            .normal {
                 background-color: lightslategrey;
             }
+            .dragon{
+                background-color: darkorchid;
+                color: goldenrod;
+            }
         }
-  
-    } 
-    .more_about_block{
+
+    }
+
+    .more_about_block {
         width: 100%;
         border-radius: 8px;
         padding: 1rem;
         background-color: aliceblue;
         margin-top: 10px;
-        p{
+
+        p {
             text-align: center;
             font-size: 24px;
         }
-        .more_about_list{
+
+        .more_about_list {
             @media (min-width:320px) {
                 display: flex;
                 justify-content: space-around;
                 list-style: none;
             }
         }
-        .more_stats_list{
+
+        .more_stats_list {
             width: 100%;
             margin-top: 20px;
-            .hp{
-                background-color: lightskyblue;
-                margin: 2.5px 0;
+            overflow: hidden;
+
+            .hp {
+                background-color: #4e7bcf;
+                margin: 5px 0;
                 padding: 0.25rem;
+                padding-left: .50rem;
+                border-radius: 3px;
+                color: white;
             }
         }
- 
+
     }
-    .more_abilities_block{
+
+    .more_abilities_block {
         @media (min-width:320px) {
             width: 100%;
             display: flex;
@@ -128,20 +180,22 @@
             border-radius: 8px;
             margin-top: 10px;
             padding: 1rem;
+
             .more_abilities {
                 @media (min-width:320px) {
                     width: 100%;
                     display: flex;
-                    justify-content:center;
+                    justify-content: center;
                     text-transform: capitalize;
                     gap: 10px;
                     margin-top: 10px;
                 }
             }
         }
-       
+
     }
-    .back_btn{
+
+    .back_btn {
         width: 50%;
         text-align: center;
         margin-top: 10px;
@@ -149,7 +203,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .back{
+
+        .back {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -158,9 +213,11 @@
             background-color: aliceblue;
             font-size: 20px;
             text-decoration: none;
-            color: lightseagreen;
+            color: #4e7bcf;
             border-radius: 4px;
-
+            @media (min-width:1024px) {
+                width: 30%;
+            }
         }
     }
 }
